@@ -38,7 +38,13 @@ body {
 
 ul[class],
 ol[class] {
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
   padding: 0;
 }
 
@@ -78,7 +84,7 @@ select {
 }
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #242B33;
+  background-color: #242b33;
   color: #ffffff;
   font-size: 1rem;
 }
@@ -88,5 +94,67 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #D4C17F;
+  color: #d4c17f;
+}
+
+.container {
+  max-width: 1142px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+#header {
+  background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 50%, #242b33 92%), url("../img/header/header-background.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.header_inner {
+  min-height: 840px;
+  padding: 30px 0 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header_inner-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_inner-top ul {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.header_inner-content {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.header_inner-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #d4c17f;
+  font-family: "Playfair Display", serif;
+}
+
+.header_inner-footer {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_inner-footer div {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
 }/*# sourceMappingURL=main.css.map */

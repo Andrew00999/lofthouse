@@ -2,17 +2,23 @@
 @import './vars';
 
 body {
-  font-family: $raleway-font;
-  background-color: $dark;
-  color: $light-text;
-  font-size: $standart-font-size;
+	font-family: $raleway-font;
+	background-color: $dark;
+	color: $light-text;
+	font-size: $standart-font-size;
 }
 
 a {
-  color: $light-text;
-  transition: color 0.3s ease;
+	color: $light-text;
+	transition: color 0.3s ease;
 
-  &:hover {
-    color: $accent;
-  }
+	&:hover {
+		color: $accent;
+	}
+}
+
+.container {
+	max-width: $container;
+	padding: 0 $desktop-padding;
+	margin: 0 auto;
 }
