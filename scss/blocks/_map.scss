@@ -5,6 +5,9 @@
 .map__block {
 	width: 100%;
 	min-height: 360px;
-	background-color: $input-background;
 	margin-top: 90px;
+}
+
+.place-card {
+	display: none !important;
 }

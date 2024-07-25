@@ -346,8 +346,11 @@ a:hover {
 .map__block {
   width: 100%;
   min-height: 360px;
-  background-color: #777c82;
   margin-top: 90px;
+}
+
+.place-card {
+  display: none !important;
 }
 
 #questions {
