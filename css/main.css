@@ -103,6 +103,42 @@ a:hover {
   margin: 0 auto;
 }
 
+.section_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #d4c17f;
+  line-height: 48px;
+  font-family: "Playfair Display", serif;
+}
+
+.cta_button-accent {
+  color: #ffffff;
+  background-color: #d4c17f;
+  padding: 12px 55px;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+.input_common-style {
+  background-color: #777c82;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+}
+.input_common-style::-moz-placeholder {
+  color: #bebebe;
+  text-align: center;
+  white-space: nowrap;
+}
+.input_common-style::placeholder {
+  color: #bebebe;
+  text-align: center;
+  white-space: nowrap;
+}
+
 #header {
   background: linear-gradient(180deg, #242b33 12%, rgba(45, 52, 60, 0.38) 50%, #242b33 92%), url("../img/header/header-background.jpg") center no-repeat;
   background-size: cover;
@@ -157,4 +193,201 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0 1rem;
+}
+
+#descr {
+  padding: 120px 0;
+  background-color: #242b33;
+}
+
+.descr__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+}
+.descr__list::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -200px;
+  background: url("../img/description/decoration-number.png") center no-repeat;
+  max-width: 300px;
+  height: 500px;
+  width: 100%;
+}
+
+.descr__list-item {
+  text-align: center;
+  max-width: 190px;
+}
+.descr__list-item img {
+  margin: 0 auto 50px;
+}
+
+.examples_grid {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+}
+.examples_grid::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: -220px;
+  width: 100%;
+  max-width: 450px;
+  height: 500px;
+  z-index: -1;
+  background: url("../img/examples/decor-number.png") center no-repeat;
+}
+
+.examples_grid-item {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.examples_grid-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
+}
+.examples_grid-item img {
+  transition: 0.3s ease-in-out;
+}
+.examples_grid-item:hover img {
+  transform: scale(1.1);
+}
+.examples_grid-item p {
+  position: absolute;
+  z-index: 2;
+  bottom: 45px;
+  left: 50px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#appointment {
+  padding: 180px 0;
+  background: url("../img/appointment/1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.appointment_content {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.appointment_content-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 200;
+}
+
+.appointment_content-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+.appointment_content-form p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 200;
+}
+
+#video {
+  margin-bottom: 180px;
+  text-align: center;
+}
+
+.video__link {
+  display: inline-block;
+  position: relative;
+}
+.video__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -420px;
+  max-width: 420px;
+  width: 100%;
+  height: 500px;
+  transform: translateY(-50%);
+  background: url("../img/video/decor-number.png") center no-repeat;
+  z-index: -1;
+}
+
+.video__link-poster {
+  width: 100%;
+  height: 100%;
+}
+
+.video__link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#map {
+  margin-bottom: 180px;
+}
+
+.map__block {
+  width: 100%;
+  min-height: 360px;
+  background-color: #777c82;
+  margin-top: 90px;
+}
+
+#questions {
+  margin-bottom: 180px;
+}
+
+.questions-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.questions-form p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 200;
+}
+
+#footer {
+  background-color: #2d343c;
+  padding: 60px 0 50px;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer__inner ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+
+.permanent-active {
+  color: #d4c17f;
+  font-weight: 600;
+}
+
+.footer-item {
+  display: flex;
+  gap: 22px;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */

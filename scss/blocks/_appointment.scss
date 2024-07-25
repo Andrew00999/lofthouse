@@ -1,0 +1,30 @@
+#appointment {
+	padding: 180px 0;
+	background: url('../img/appointment/1.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.appointment_content {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.appointment_content-text {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 200;
+}
+
+.appointment_content-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 35px 30px;
+
+	p {
+		font-size: 13px;
+		line-height: 16px;
+		font-weight: 200;
+	}
+}

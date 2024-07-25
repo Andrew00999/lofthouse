@@ -22,3 +22,35 @@ a {
 	padding: 0 $desktop-padding;
 	margin: 0 auto;
 }
+
+.section_title {
+	font-size: 36px;
+	font-weight: 700;
+	color: $accent;
+	line-height: 48px;
+	font-family: $playfair-display-font;
+}
+
+.cta_button-accent {
+	color: $light-text;
+	background-color: $accent;
+	padding: 12px 55px;
+	white-space: nowrap;
+	border: none;
+	cursor: pointer;
+}
+
+.input_common-style {
+	background-color: $input-background;
+	border: none;
+	outline: none;
+	color: $light-text;
+	padding: 12px;
+	text-align: center;
+
+	&::placeholder {
+		color: $input-placeholder;
+		text-align: center;
+		white-space: nowrap;
+	}
+}

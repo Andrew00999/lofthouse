@@ -1,0 +1,26 @@
+#footer {
+	background-color: $footer-background;
+	padding: 60px 0 50px;
+}
+
+.footer__inner {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 15px 0;
+	}
+}
+
+.permanent-active {
+	color: $accent;
+	font-weight: 600;
+}
+
+.footer-item {
+	display: flex;
+	gap: 22px;
+	margin-top: 5px;
+}

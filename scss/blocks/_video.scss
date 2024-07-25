@@ -1,0 +1,32 @@
+#video {
+	margin-bottom: 180px;
+	text-align: center;
+}
+
+.video__link {
+	display: inline-block;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -420px;
+		max-width: 420px;
+		width: 100%;
+		height: 500px;
+		transform: translateY(-50%);
+		background: url('../img/video/decor-number.png') center no-repeat;
+		z-index: -1;
+	}
+}
+.video__link-poster {
+	width: 100%;
+	height: 100%;
+}
+.video__link-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

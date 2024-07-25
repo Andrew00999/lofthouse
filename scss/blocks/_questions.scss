@@ -1,0 +1,15 @@
+#questions {
+	margin-bottom: 180px;
+}
+.questions-form {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	margin-top: 40px;
+
+	p {
+		font-size: 13px;
+		line-height: 16px;
+		font-weight: 200;
+	}
+}
